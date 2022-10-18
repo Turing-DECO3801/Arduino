@@ -32,6 +32,8 @@ bool turnedOn = LOW;
 
 void setup() {
   Serial.begin(9600);
+
+  // Initialisation of READ and WRITE pins on the ESP32
   pinMode(BUTTON_ON, INPUT_PULLUP);
   pinMode(BUTTON_COLOUR, INPUT_PULLUP);
   pinMode(PIXEL_PIN, OUTPUT);
